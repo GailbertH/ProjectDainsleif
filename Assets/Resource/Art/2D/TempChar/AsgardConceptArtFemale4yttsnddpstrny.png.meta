@@ -1,0 +1,266 @@
+fileFormatVersion: 2
+guid: 2679b0a344ee741978e298e82abbbfdb
+timeCreated: 1527408965
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: AsgardConceptArtFemale4yttsnddpstrny_0
+    21300002: AsgardConceptArtFemale4yttsnddpstrny_1
+    21300004: AsgardConceptArtFemale4yttsnddpstrny_2
+    21300006: AsgardConceptArtFemale4yttsnddpstrny_3
+    21300008: AsgardConceptArtFemale4yttsnddpstrny_4
+    21300010: AsgardConceptArtFemale4yttsnddpstrny_5
+    21300012: AsgardConceptArtFemale4yttsnddpstrny_6
+    21300014: AsgardConceptArtFemale4yttsnddpstrny_7
+    21300016: AsgardConceptArtFemale4yttsnddpstrny_8
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AsgardConceptArtFemale4yttsnddpstrny_2
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 238
+        width: 434
+        height: 675
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 184.62498, y: -108.87496}
+        - {x: 188.37498, y: -120.12496}
+        - {x: 217, y: -131.37497}
+        - {x: 217, y: 221.12502}
+        - {x: 143.375, y: 337.5}
+        - {x: -179.12498, y: 337.5}
+        - {x: -216.62498, y: 161.12502}
+        - {x: -216.62498, y: -116.37496}
+        - {x: -197.87498, y: -112.62496}
+        - {x: -190.37498, y: -105.12496}
+        - {x: -167.87498, y: -183.87495}
+        - {x: -104.12499, y: -337.5}
+        - {x: 102.12499, y: -337.5}
+        - {x: 158.375, y: -311.37494}
+        - {x: 184.62498, y: -97.62496}
+        - {x: 184.62498, y: -90.12496}
+      - - {x: 210.87498, y: 142.37503}
+        - {x: 217, y: 134.87503}
+        - {x: 217, y: 134.87503}
+        - {x: 217, y: 157.37502}
+        - {x: 210.87498, y: 153.62502}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AsgardConceptArtFemale4yttsnddpstrny_3
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 715
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.9999804, y: 5}
+        - {x: -4.9999804, y: -4.9999804}
+        - {x: 5, y: -4.9999804}
+        - {x: 5, y: 5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AsgardConceptArtFemale4yttsnddpstrny_4
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 715
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 5}
+        - {x: -5, y: -4.9999804}
+        - {x: 5, y: -4.9999804}
+        - {x: 5, y: 5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AsgardConceptArtFemale4yttsnddpstrny_5
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 238
+        width: 435
+        height: 675
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.124973, y: 337.5}
+        - {x: -123.37497, y: 296.125}
+        - {x: -168.37497, y: 254.87502}
+        - {x: -217.12497, y: 138.62503}
+        - {x: -217.12497, y: -90.12496}
+        - {x: -209.62497, y: -123.87496}
+        - {x: -179.62497, y: -120.12496}
+        - {x: -175.87497, y: -108.87496}
+        - {x: -175.87497, y: -101.37496}
+        - {x: -172.12497, y: -221.37495}
+        - {x: -115.87497, y: -337.5}
+        - {x: 116.625015, y: -337.5}
+        - {x: 217.5, y: -161.37495}
+        - {x: 217.5, y: 224.87502}
+        - {x: 79.125015, y: 337.5}
+      - - {x: -217.12497, y: 157.37502}
+        - {x: -217.12497, y: 134.87503}
+        - {x: -209.62497, y: 134.87503}
+        - {x: -202.12497, y: 142.37503}
+        - {x: -202.12497, y: 149.87502}
+        - {x: -209.62497, y: 157.37502}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AsgardConceptArtFemale4yttsnddpstrny_6
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 242
+        width: 397
+        height: 671
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -149.62497, y: 335.5}
+        - {x: -198.37497, y: 305.75}
+        - {x: -198.37497, y: -16.749973}
+        - {x: -74.62497, y: -335.49997}
+        - {x: 60.37502, y: -335.49997}
+        - {x: 198.5, y: -155.49997}
+        - {x: 198.5, y: 212.00002}
+        - {x: 116.625015, y: 335.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AsgardConceptArtFemale4yttsnddpstrny_7
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 242
+        width: 392
+        height: 671
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.24992, y: 335.5}
+        - {x: -195.74992, y: 309.5}
+        - {x: -195.74992, y: -147.99997}
+        - {x: -53.249928, y: -335.49997}
+        - {x: 85.50006, y: -335.49997}
+        - {x: 196, y: 58.250023}
+        - {x: 196, y: 234.50002}
+        - {x: 138.00006, y: 335.5}
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

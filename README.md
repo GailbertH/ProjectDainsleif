@@ -1,2 +1,2 @@
 # Dainsleif
-Tapping game.
+Tapping game for fun.

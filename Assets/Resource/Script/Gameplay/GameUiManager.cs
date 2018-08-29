@@ -12,9 +12,15 @@ public class GameUiManager : MonoBehaviour
 		{
 			for (int i = 0; i < Input.touchCount; i++) 
 			{
+				if(Input.touchCount < i)
+					return;
+									
 				Input.GetTouch (i);
-				LogHandler.AddLog ("Button Touch " + Input.GetTouch (i).position.ToString());
+				Vector3 pos = new Vector3 (Input.GetTouch (i).position.x, Input.GetTouch (i).position.y, 0);
+				LogHandler.AddLog ("Button Touch " + Camera.main.ScreenToWorldPoint(pos).ToString());
 			}
 		}
+		if(GameManager.Instance != null)
+			GameManager.Instance.PlayerAttack ();
 	}
 }

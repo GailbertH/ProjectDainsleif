@@ -21,7 +21,9 @@ namespace Dainsleif.Game
 			return (nextState == GameState.EXIT);
 		}
 		public override void Start () {}
-		public override void Update () {}
+		public override void Update () {
+			Manager.AIAttack ();
+		}
 		public override void End () {}
 	}
 }

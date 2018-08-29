@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-	void Update()
+	void FixedUpdate()
 	{
 		if (stateMachine != null) 
 		{
@@ -40,11 +40,42 @@ public class GameManager : MonoBehaviour
 	}
 	#endregion
 
+	public void AIAttack()
+	{
+		Debug.Log ("ATTACK");
+	}
+
 	public void ExitGame()
 	{
 		if (StateMachine.GetCurrentState.State == GameState.INGAME) 
 		{
 			StateMachine.SwitchState (GameState.EXIT);
 		}
+	}
+
+
+
+	[SerializeField] private List<EnemyController> enemyController;
+
+	public void PlayerAttack()
+	{
+		if (enemyController.Count <= 0)
+			return;
+
+		int rand = Random.Range (0, enemyController.Count);
+		enemyController [rand].DecreseLife (1);
+		LogHandler.AddLog ("Life Dec " + rand + " Remaining Life =" +  enemyController [rand].life);
+		if (enemyController [rand].life <= 0) 
+		{
+			enemyController [rand].gameObject.SetActive (false);
+			enemyController.RemoveAt (rand);
+			CheckWinOrLoseCondition ();
+		}
+	}
+
+	private void CheckWinOrLoseCondition()
+	{
+		if (enemyController.Count <= 0)
+			LogHandler.AddLog ("WINNER!!!!");
 	}
 }

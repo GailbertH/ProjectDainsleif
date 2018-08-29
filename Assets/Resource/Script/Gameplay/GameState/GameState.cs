@@ -8,7 +8,8 @@ namespace Dainsleif.Game
 	{
 		LOADING = 0,
 		INGAME = 1,
-		EXIT = 2
+		RESULT = 2,
+		EXIT = 3
 	}
 	public class GameState_Base<GameState> 
 	{
@@ -31,7 +32,8 @@ namespace Dainsleif.Game
 		}
 
 		public virtual void GoToNextState() {}
-		public virtual void Start () {
+		public virtual void Start () 
+		{
 			Debug.Log (this.state.ToString ());
 		}
 		public virtual void Update () {}

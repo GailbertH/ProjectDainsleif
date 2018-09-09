@@ -30,6 +30,8 @@ namespace Dainsleif.Game
 
 			prevGameState = new List<GameState> ();
 			prevGameState.Add (currentState.State);
+
+			manager.BeginStateUpdate ();
 		}
 
 		public void Update ()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour 
 {
-	public const string SPAWN = "EnemySpawn";
+	public const string SPAWN = "EnemySpawn2";
 
 	public int life = 20;
 	[SerializeField] Animation enemyAnim;

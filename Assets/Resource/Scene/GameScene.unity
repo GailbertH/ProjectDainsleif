@@ -161,6 +161,12 @@ MonoBehaviour:
   - {fileID: 1205109675}
   - {fileID: 460577028}
   - {fileID: 1754826034}
+  playerController:
+  - {fileID: 1294906900}
+  - {fileID: 2123142623}
+  - {fileID: 1633587162}
+  - {fileID: 388835035}
+  - {fileID: 189961198}
 --- !u!1 &189634229
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,6 +299,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseAttackCharge: 3
   characterAnim: {fileID: 189961197}
+  playerAnim: {fileID: 1265470704}
+  id: 4
 --- !u!1 &385825880
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,6 +310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 385825881}
   - component: {fileID: 385825882}
+  - component: {fileID: 385825883}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -366,6 +375,21 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!111 &385825883
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 385825880}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: e444df8a784734e33aeeca1f42e8c6f7, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: e444df8a784734e33aeeca1f42e8c6f7, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &388835032
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +449,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseAttackCharge: 1
   characterAnim: {fileID: 388835034}
+  playerAnim: {fileID: 484966370}
+  id: 3
 --- !u!1 &400884692
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,6 +671,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: f4e4566428f754f698312cf476042469, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: f4e4566428f754f698312cf476042469, type: 2}
+  - {fileID: 7400000, guid: ba67b3d476d574f35a9008efb024353c, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -663,6 +690,7 @@ MonoBehaviour:
   life: 10
   enemyAnim: {fileID: 456632403}
   characterAnim: {fileID: 460577027}
+  baseAttackCharge: 7
 --- !u!1 &484966367
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,6 +700,7 @@ GameObject:
   m_Component:
   - component: {fileID: 484966368}
   - component: {fileID: 484966369}
+  - component: {fileID: 484966370}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -727,7 +756,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300008, guid: 5b8d9f35289a046deb7ed97ab1a15a34, type: 3}
-  m_Color: {r: 1, g: 0.5955882, b: 0.5955882, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
@@ -736,6 +765,21 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!111 &484966370
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 484966367}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: e444df8a784734e33aeeca1f42e8c6f7, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: e444df8a784734e33aeeca1f42e8c6f7, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &742021971
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,6 +934,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 895909370}
+  - component: {fileID: 895909371}
   m_Layer: 0
   m_Name: EnemyManager
   m_TagString: Untagged
@@ -915,6 +960,23 @@ Transform:
   m_Father: {fileID: 15300404}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &895909371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 895909369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb86febd34764026a0f3b41bacc3068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 1841755114}
+  - {fileID: 1096529697}
+  - {fileID: 1205109675}
+  - {fileID: 460577028}
+  - {fileID: 1754826034}
 --- !u!1 &995388987
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,6 +1142,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: f4e4566428f754f698312cf476042469, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: f4e4566428f754f698312cf476042469, type: 2}
+  - {fileID: 7400000, guid: ba67b3d476d574f35a9008efb024353c, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -1098,6 +1161,7 @@ MonoBehaviour:
   life: 10
   enemyAnim: {fileID: 1691136838}
   characterAnim: {fileID: 1096529696}
+  baseAttackCharge: 4
 --- !u!1 &1205109672
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,6 +1204,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: f4e4566428f754f698312cf476042469, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: f4e4566428f754f698312cf476042469, type: 2}
+  - {fileID: 7400000, guid: ba67b3d476d574f35a9008efb024353c, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -1158,6 +1223,7 @@ MonoBehaviour:
   life: 10
   enemyAnim: {fileID: 1071637494}
   characterAnim: {fileID: 1205109674}
+  baseAttackCharge: 3
 --- !u!1 &1265470701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,6 +1233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1265470702}
   - component: {fileID: 1265470703}
+  - component: {fileID: 1265470704}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -1222,7 +1289,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300014, guid: 2679b0a344ee741978e298e82abbbfdb, type: 3}
-  m_Color: {r: 1, g: 0.97363085, b: 0.61764705, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
@@ -1231,6 +1298,21 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!111 &1265470704
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1265470701}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: e444df8a784734e33aeeca1f42e8c6f7, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: e444df8a784734e33aeeca1f42e8c6f7, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1294906897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,6 +1372,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseAttackCharge: 2
   characterAnim: {fileID: 1294906899}
+  playerAnim: {fileID: 385825883}
+  id: 0
 --- !u!1 &1360485031
 GameObject:
   m_ObjectHideFlags: 0
@@ -1599,6 +1683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1609115488}
   - component: {fileID: 1609115489}
+  - component: {fileID: 1609115490}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -1663,6 +1748,21 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!111 &1609115490
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1609115487}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: e444df8a784734e33aeeca1f42e8c6f7, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: e444df8a784734e33aeeca1f42e8c6f7, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1633587159
 GameObject:
   m_ObjectHideFlags: 0
@@ -1722,6 +1822,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseAttackCharge: 2
   characterAnim: {fileID: 1633587161}
+  playerAnim: {fileID: 1609115490}
+  id: 2
 --- !u!1 &1691136836
 GameObject:
   m_ObjectHideFlags: 0
@@ -1904,6 +2006,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: f4e4566428f754f698312cf476042469, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: f4e4566428f754f698312cf476042469, type: 2}
+  - {fileID: 7400000, guid: ba67b3d476d574f35a9008efb024353c, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -1922,6 +2025,7 @@ MonoBehaviour:
   life: 10
   enemyAnim: {fileID: 400884693}
   characterAnim: {fileID: 1754826033}
+  baseAttackCharge: 6
 --- !u!1 &1841755111
 GameObject:
   m_ObjectHideFlags: 0
@@ -1964,6 +2068,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: f4e4566428f754f698312cf476042469, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: f4e4566428f754f698312cf476042469, type: 2}
+  - {fileID: 7400000, guid: ba67b3d476d574f35a9008efb024353c, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -1982,6 +2087,7 @@ MonoBehaviour:
   life: 10
   enemyAnim: {fileID: 1535702956}
   characterAnim: {fileID: 1841755113}
+  baseAttackCharge: 5
 --- !u!1 &1950496976
 GameObject:
   m_ObjectHideFlags: 0
@@ -2064,6 +2170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2026164908}
   - component: {fileID: 2026164909}
+  - component: {fileID: 2026164910}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -2119,7 +2226,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300008, guid: 5b8d9f35289a046deb7ed97ab1a15a34, type: 3}
-  m_Color: {r: 0.60294116, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
@@ -2128,6 +2235,21 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!111 &2026164910
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2026164907}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: e444df8a784734e33aeeca1f42e8c6f7, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: e444df8a784734e33aeeca1f42e8c6f7, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2123142620
 GameObject:
   m_ObjectHideFlags: 0
@@ -2187,3 +2309,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseAttackCharge: 4
   characterAnim: {fileID: 2123142622}
+  playerAnim: {fileID: 2026164910}
+  id: 1

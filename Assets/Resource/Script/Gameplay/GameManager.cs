@@ -10,11 +10,18 @@ public class GameManager : MonoBehaviour
 
 	public static GameManager Instance { get { return instance; } }
 	public GameStateMachine StateMachine{ get { return this.stateMachine; } }
+	public GameUiManager GameUI{get {return GameUiManager.Instance; } }
 	private Coroutine updateRoutine;
 	private float gameSpeed = 1;
 	private bool isReviving = false;
 	private PlayerProgressData playerData = new PlayerProgressData();
 	#region Monobehavior Function
+
+	[SerializeField] private List<EnemyController> enemyController;
+	[SerializeField] private List<PlayerController> playerController;
+	private List<EnemyController> deadEnemy;
+	private List<PlayerController> deadPlayer;
+
 	void Awake()
 	{
 		instance = this;
@@ -25,8 +32,8 @@ public class GameManager : MonoBehaviour
 		stateMachine = new GameStateMachine (this);
 		deadEnemy = new List<EnemyController> ();
 		playerData.Initialize ();
-		if(GameUiManager.Instance != null)
-			GameUiManager.Instance.UpdateUI ();
+		if(GameUI != null)
+			GameUI.UpdateUI ();
 	}
 
 	void OnDestroy()
@@ -82,7 +89,11 @@ public class GameManager : MonoBehaviour
 			PlayerManager.Instance.PlayerAIAttack ();
 		else
 			Debug.LogError ("PlayerManager is null!");
-		//Debug.Log ("ATTACK");
+
+		if (EnemyManager.Instance != null)
+			EnemyManager.Instance.EnemyAIAttack ();
+		else
+			Debug.LogError ("EnemyManage is null!");
 	}
 
 	public void ExitGame()
@@ -92,11 +103,7 @@ public class GameManager : MonoBehaviour
 			StateMachine.SwitchState (GameState.EXIT);
 		}
 	}
-
-
-
-	[SerializeField] private List<EnemyController> enemyController;
-	private List<EnemyController> deadEnemy;
+		
 	public void MainPlayerAttack()
 	{
 		if (PlayerManager.Instance != null)
@@ -105,7 +112,7 @@ public class GameManager : MonoBehaviour
 
 	public void PlayerAttack()
 	{
-		if (enemyController.Count <= 0)
+		if (enemyController == null || enemyController.Count <= 0)
 			return;
 
 		bool hasChanges = false;
@@ -132,6 +139,15 @@ public class GameManager : MonoBehaviour
 
 		if(hasChanges && GameManager.instance != null)
 			GameUiManager.Instance.UpdateUI ();
+	}
+
+	public void EnemyAttack()
+	{
+		if (playerController == null || playerController.Count <= 0)
+			return;
+
+		int rand = Random.Range (0, playerController.Count);
+		playerController [rand].DecreseLife (1);
 	}
 
 	private void DelayReviveEnemy()

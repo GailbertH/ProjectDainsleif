@@ -9,10 +9,10 @@ public class GameManager : MonoBehaviour
 	private GameStateMachine stateMachine;
 
 	public static GameManager Instance { get { return instance; } }
-	public GameStateMachine StateMachine{ get { return this.stateMachine; } }
-	public GameUiManager GameUI{get {return GameUiManager.Instance; } }
+	public GameStateMachine StateMachine { get { return this.stateMachine; } }
+	public GameUiManager GameUI { get { return GameUiManager.Instance; } }
 	private Coroutine updateRoutine;
-	private float gameSpeed = 1;
+	[SerializeField] private float gameSpeed = 1;
 	private bool isReviving = false;
 	private PlayerProgressData playerData = new PlayerProgressData();
 	#region Monobehavior Function

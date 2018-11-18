@@ -11,6 +11,7 @@ public class GameUiManager : MonoBehaviour
 
 	[SerializeField] Text killCountText;
 	[SerializeField] Text waveCountText;
+	[SerializeField] List<PlayerIconUI> playerIcons;
 	void Awake()
 	{
 		instance = this;
@@ -45,5 +46,21 @@ public class GameUiManager : MonoBehaviour
 			killCountText.text = string.Format("Kills: {0}", GameManager.Instance.PlayerData().KillCount);
 		if(waveCountText != null)
 			waveCountText.text = string.Format("Waves: {0}", GameManager.Instance.PlayerData().WaveCount);
+	}
+
+	public void UpdatePlayerIconHealth(int indexOfIcon, float fillAmount)
+	{
+		if (indexOfIcon > playerIcons.Count)
+			return;
+
+		playerIcons [indexOfIcon].UpdateHealthBar (fillAmount);
+	}
+
+	public void UpdatePlayerIconUlti(int indexOfIcon, float fillAmount)
+	{
+		if (indexOfIcon > playerIcons.Count)
+			return;
+
+		playerIcons [indexOfIcon].UpdateUlttiBar (fillAmount);
 	}
 }

@@ -2,15 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyManager : MonoBehaviour {
+public class EnemyManager : MonoBehaviour 
+{
+	private static EnemyManager instance;
+	public static EnemyManager Instance { get { return instance; } }
+	public List<EnemyController> enemies;
 
-	// Use this for initialization
-	void Start () {
-		
+	void Awake()
+	{
+		instance = this;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	public void EnemyAIAttack()
+	{
+		if (enemies == null)
+			return;
+
+		for (int i = 0; enemies.Count > i; i++) 
+		{
+			enemies [i].CheckAttack ();
+		}
 	}
 }
